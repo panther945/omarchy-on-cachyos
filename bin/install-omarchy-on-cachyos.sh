@@ -94,8 +94,8 @@ sed -i 's/if command -v mise &> \/dev\/null; then/if [ "$SHELL" = "\/bin\/bash" 
 
 # Add fish shell support to mise activation in config/uwsm/env
 sed -i '/eval "\$(mise activate bash)"/a\
-elif [ "$SHELL" = "\/bin\/fish" ] && command -v mise &> /dev/null; then\
-  mise activate fish | source' config/uwsm/env
+elif [ "$SHELL" = "\/bin\/zsh" ] && command -v mise &> /dev/null; then\
+  eval "\$(mise activate zsh)"' config/uwsm/env
 
 # Copy omarchy installation files to ~/.local/share/omarchy
 mkdir -p ~/.local/share/omarchy
