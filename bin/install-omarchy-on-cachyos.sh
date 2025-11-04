@@ -41,8 +41,8 @@ else
 fi
 
 # Add omarchy repository to pacman.conf
-echo -e "\n[omarchy]\nSigLevel = Optional TrustedOnly\nServer = https://pkgs.omarchy.org/\$arch" | sudo tee -a /etc/pacman.conf > /dev/null
-sudo pacman -Syu
+# echo -e "\n[omarchy]\nSigLevel = Optional TrustedOnly\nServer = https://pkgs.omarchy.org/\$arch" | sudo tee -a /etc/pacman.conf > /dev/null
+# sudo pacman -Syu
 
 # Prompt user for username
 echo ""
